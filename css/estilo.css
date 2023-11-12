@@ -1,0 +1,76 @@
+/* header */
+/* header {
+    position: sticky;
+} */
+/* main */
+.text-center a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.principal {
+    background-image: url("/img/tienda2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* .principal h2{
+    filter: brightness(100%);
+} */
+
+
+.mapita{
+    width: 100%;
+    height: auto;
+}
+@media (min-width: 300px){
+    .mapita{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 600px){
+    .formContacto{
+        width: 300px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
+
+/* footer */
+.footer-grid {
+    background-color: rgb(48,52,52);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.footer-grid a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.footer-grid {
+    background-color: rgb(48,52,52);
+    color: white;
+    
+    display: grid;
+    grid-template-columns: 200px
+}
+
+@media (min-width: 400px) {
+    .footer-grid {
+        grid-template-columns: 200px 200px;
+    }
+}

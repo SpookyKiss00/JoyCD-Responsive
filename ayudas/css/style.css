@@ -1,0 +1,38 @@
+/* Flexbos nos obligada a elegir entre filas o columnas
+Grinds permite acomodar de las 2 formas */
+
+.itemHijo {
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+.itemHijo p {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: bisque;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gridPadre {
+    /* 1) Activamos el sistema */
+    display: grid;
+
+    /* 2) Definimos la cantidad de columnas que tendremos. Cada valor separado será una columna distinta */
+    grid-template-columns: 300px 300px 500px 200px;
+    /* Acomodará los valores según la cantidad de valores que ponga, es decir, columnas */
+
+    /* fr = fracción, nueva unidad de medida para distribuir las columnas según ponderador*/
+    grid-template-columns: 2fr 1fr 1fr;
+    /* Idealmente no se deben combinar unidades de medida */
+
+    /* repeat () para repetir configuraciones */
+    grid-template-columns: repeat(6, 1fr);
+
+    grid-template-rows: 200px;
+
+    /* gap genera un espacio entre columnas */
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 25px;
+}
