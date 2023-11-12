@@ -9,7 +9,7 @@
     font-weight: bold;
 }
 .principal {
-    background-image: url("/img/tienda2.jpg");
+    background-image: url("../img/tienda2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,6 +19,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+@media (min-width: 500px){
+    .principal p{
+        width: 500px;
+    }
 }
 
 /* .principal h2{
@@ -37,11 +43,65 @@
     }
 }
 
-@media (min-width: 600px){
+.formContacto{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 500px){
     .formContacto{
         width: 300px;
         margin: 0 auto;
+        display: flex;
+        margin-top: 10px;
         flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogoGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+@media (min-width: 1000px){
+    .catalogoGrid {
+        grid-template-columns: 340px 340px 340px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
 }
 
